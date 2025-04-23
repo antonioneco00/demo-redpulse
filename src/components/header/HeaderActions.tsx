@@ -23,7 +23,7 @@ export default function HeaderActions() {
       <div className="flex mr-2 lg:mr-0">
         <button
           onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-          className="text-sm/6 font-semibold rounded-full hover:text-gray-400 transition-colors duration-500 cursor-pointer"
+          className="text-sm/6 font-semibold rounded-full hover:text-red-400 transition-colors duration-500 cursor-pointer"
           aria-label="Toggle theme"
         >
           {theme === "dark" ? (

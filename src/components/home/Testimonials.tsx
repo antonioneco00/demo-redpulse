@@ -33,11 +33,9 @@ export default function Testimonials() {
         {clients.map((client, id) => (
           <div
             key={client.name}
-            className="relative flex h-full flex-col shadow-2xl rounded-3xl p-8 ring-1 ring-gray-900/10 dark:ring-indigo-400/40 sm:p-10"
+            className="relative flex h-full flex-col shadow-2xl rounded-3xl p-8 ring-1 ring-gray-900/10 dark:ring-red-400/40 sm:p-10"
           >
-            <p className="text-lg text-gray-500 font-sans mb-3">
-              “{client.quote}”
-            </p>
+            <p className="text-lg text-gray-500 mb-3">“{client.quote}”</p>
             <div className="flex pt-3 mt-auto border-t border-gray-900/10 dark:border-gray-100/30">
               <div className="relative self-center h-[50px] w-full max-w-[50px] mr-4 overflow-hidden rounded-full">
                 <Image
@@ -48,7 +46,7 @@ export default function Testimonials() {
                 />
               </div>
               <div>
-                <h3 className="text-indigo-400 text-base/7 font-semibold">
+                <h3 className="text-red-400 text-base/7 font-semibold">
                   {client.name}
                 </h3>
                 <p className="mt-0.5 text-base/7">{client.description}</p>

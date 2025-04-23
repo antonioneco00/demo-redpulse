@@ -1,7 +1,6 @@
 import FeatureSection from "@/components/home/FeatureSection";
 import FactsSection from "@/components/home/FactsSection";
 import GridSection from "@/components/home/GridSection";
-import CarouselSection from "@/components/home/CarouselSection";
 import PricingSection from "@/components/home/PricingSection";
 import ProductsSection from "@/components/home/ProductsSection";
 import HeroSection from "@/components/home/HeroSection";
@@ -34,7 +33,6 @@ export default function Home() {
       <FactsSection />
       <LogoClouds />
       <GridSection />
-      <CarouselSection />
       <PricingSection />
       <ProductsSection />
       <Testimonials />

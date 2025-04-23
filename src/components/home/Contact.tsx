@@ -61,7 +61,7 @@ export default function Contact() {
               <input
                 id="name"
                 {...register("name", { required: "Name is required" })}
-                className="block w-full dark:bg-gray-900 rounded-md px-3.5 py-2 text-base outline-1 outline-gray-300 dark:outline-gray-800 placeholder:text-gray-400 focus:outline-indigo-600"
+                className="block w-full dark:bg-gray-900 rounded-md px-3.5 py-2 text-base outline-1 outline-gray-300 dark:outline-gray-800 placeholder:text-gray-400 focus:outline-red-600"
               />
               {errors.name && (
                 <p className="mt-1 text-sm text-red-500">
@@ -86,7 +86,7 @@ export default function Contact() {
                     message: "Email is invalid",
                   },
                 })}
-                className="block w-full dark:bg-gray-900 rounded-md px-3.5 py-2 text-base outline-1 outline-gray-300 dark:outline-gray-800 placeholder:text-gray-400 focus:outline-indigo-600"
+                className="block w-full dark:bg-gray-900 rounded-md px-3.5 py-2 text-base outline-1 outline-gray-300 dark:outline-gray-800 placeholder:text-gray-400 focus:outline-red-600"
               />
               {errors.email && (
                 <p className="mt-1 text-sm text-red-500">
@@ -105,7 +105,7 @@ export default function Contact() {
                 id="message"
                 rows={4}
                 {...register("message", { required: "Message is required" })}
-                className="block w-full dark:bg-gray-900 rounded-md px-3.5 py-2 text-base outline-1 outline-gray-300 dark:outline-gray-800 placeholder:text-gray-400 focus:outline-indigo-600"
+                className="block w-full dark:bg-gray-900 rounded-md px-3.5 py-2 text-base outline-1 outline-gray-300 dark:outline-gray-800 placeholder:text-gray-400 focus:outline-red-600"
               />
               {errors.message && (
                 <p className="mt-1 text-sm text-red-500">
@@ -120,7 +120,7 @@ export default function Contact() {
           <button
             type="submit"
             disabled={isSubmitting}
-            className="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white hover:bg-indigo-500 focus-visible:outline-indigo-600"
+            className="block w-full rounded-md bg-red-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white hover:bg-red-500 focus-visible:outline-red-600"
           >
             {isSubmitting ? "Sending..." : "Send"}
           </button>

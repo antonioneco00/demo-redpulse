@@ -5,7 +5,7 @@ export default function GridSection() {
     <div className="py-24 sm:py-32" id="about">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
-          <h2 className="text-base/7 font-semibold text-indigo-500">
+          <h2 className="text-base/7 font-semibold text-red-500">
             Optional Text
           </h2>
           <p className="mt-2 text-4xl font-semibold tracking-tight text-pretty sm:text-5xl lg:text-balance">
@@ -21,10 +21,10 @@ export default function GridSection() {
           <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none md:grid-cols-2 lg:grid-cols-3 lg:gap-y-16">
             {gridItems.map((item) => (
               <div key={item.name} className="flex md:inline">
-                <div className="flex size-14 min-w-14 self-center items-center justify-center rounded-lg bg-indigo-100 dark:bg-indigo-950 md:mb-4 mx-4 md:mx-0">
+                <div className="flex size-14 min-w-14 self-center items-center justify-center rounded-lg bg-red-100 dark:bg-red-950 md:mb-4 mx-4 md:mx-0">
                   <item.icon
                     aria-hidden="true"
-                    className="size-10 text-indigo-600 dark:text-indigo-400"
+                    className="size-10 text-red-600 dark:text-red-400"
                   />
                 </div>
                 <div>
