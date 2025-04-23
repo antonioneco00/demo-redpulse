@@ -1,61 +1,49 @@
-import { CheckIcon } from "@heroicons/react/20/solid";
+import { FireIcon, ClockIcon, BoltIcon, CheckIcon, UsersIcon, AcademicCapIcon } from "@heroicons/react/20/solid";
 
 export const features = [
   {
-    name: "Feature 1.",
+    name: "Entrenamientos de alta intensidad.",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
-    icon: CheckIcon,
+      "Entrenamientos funcionales que combinan fuerza y resistencia.",
+    icon: BoltIcon,
   },
   {
-    name: "Feature 2.",
+    name: "Sesiones dirigidas de 45 minutos.",
     description:
-      "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.",
-    icon: CheckIcon,
+      "El tiempo que necesitas para darlo todo.",
+    icon: ClockIcon,
   },
   {
-    name: "Feature 3.",
+    name: "Música, luces y energía pura.",
     description:
-      "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
-    icon: CheckIcon,
+      "La mejor combinación para motivarte.",
+    icon: FireIcon,
   },
 ];
 
 export const gridItems = [
   {
-    name: "Item 1",
+    name: "Grupos reducidos",
     description:
-      "Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.",
-    icon: CheckIcon,
+      "Máximo 12 personas por sesión para asegurar atención personalizada.",
+    icon: UsersIcon,
   },
   {
-    name: "Item 2",
+    name: "Entrenadores con experiencia",
     description:
-      "Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget. Sem sodales gravida quam turpis enim lacus amet.",
-    icon: CheckIcon,
+      "Nuestros entrenadores tienen background en boxeo, cross training y fisioterapia",
+    icon: AcademicCapIcon,
   },
   {
-    name: "Item 3",
+    name: "Iluminación sincronizada",
     description:
-      "Quisque est vel vulputate cursus. Risus proin diam nunc commodo. Lobortis auctor congue commodo diam neque.",
-    icon: CheckIcon,
+      "La música y las luces se sincronizan para crear una experiencia única.",
+    icon: FireIcon,
   },
   {
-    name: "Item 4",
+    name: "Sin cuotas mensuales",
     description:
-      "Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.",
+      "Sólo pagas por lo que entrenas.",
     icon: CheckIcon,
-  },
-  {
-    name: "Item 5",
-    description:
-      "Donec nec dolor fringilla, sagittis tortor ac, sollicitudin justo. Cras vel efficitur arcu. Sed luctus lacus mi, et vulputate purus aliquam at.",
-    icon: CheckIcon,
-  },
-  {
-    name: "Item 6",
-    description:
-      "Aenean pharetra tellus id suscipit posuere. Aenean elit odio, fringilla in elit vitae, tincidunt consectetur lorem.",
-    icon: CheckIcon,
-  },
+  }
 ];

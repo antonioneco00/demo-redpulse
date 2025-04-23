@@ -9,12 +9,12 @@ export default function FeatureSection() {
           <div className="lg:pr-8">
             <div className="lg:max-w-lg">
               <h2 className="mt-2 text-4xl font-semibold tracking-tight text-pretty sm:text-5xl">
-                Main Features
+                Sobre Nosotros
               </h2>
               <p className="mt-6 text-lg/8 text-gray-500">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Maiores impedit perferendis suscipit eaque, iste dolor
-                cupiditate blanditiis ratione.
+                RedPulse nació con una misión: redefinir el entrenamiento. No
+                somos un gimnasio, somos una comunidad que suda, grita y avanza
+                junta.
               </p>
               <dl className="mt-10 max-w-xl space-y-8 text-base/7 text-gray-500 lg:max-w-none">
                 {features.map((feature) => (
@@ -33,20 +33,12 @@ export default function FeatureSection() {
             </div>
           </div>
           <Image
-            alt="Product screenshot"
-            src="/product-screenshot.png"
-            width={2432}
-            height={1442}
-            className="w-[48rem] max-w-none rounded-xl ring-1 shadow-xl ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
-            priority
-          />
-          {/* <Image
-            src="/about-image.svg"
+            src="/about-image.png"
             alt="about image"
-            width={0}
-            height={0}
-            className="w-auto h-auto object-contain drop-shadow-three"
-          /> */}
+            width={500}
+            height={500}
+            className="w-auto h-auto object-contain drop-shadow-three shadow-[4px_4px_0] shadow-red-500/80"
+          />
         </div>
       </div>
     </div>
