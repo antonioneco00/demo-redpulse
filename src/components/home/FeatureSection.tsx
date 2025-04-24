@@ -3,7 +3,27 @@ import Image from "next/image";
 
 export default function FeatureSection() {
   return (
-    <div className="overflow-hidden bg-background py-24 sm:py-32">
+    <div className="relative overflow-hidden bg-background py-24 sm:py-32 z-10" id="about">
+      <div className="absolute -top-[1px] left-0">
+        <svg
+          viewBox="0 0 924 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-screen -scale-100"
+        >
+          <path d="M924 0L7.52602e-06 20H924V0Z" fill="var(--color-neutral-600)" />
+        </svg>
+      </div>
+      <div className="absolute -bottom-[1px]">
+        <svg
+          viewBox="0 0 924 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-screen"
+        >
+          <path d="M924 0L7.52602e-06 20H924V0Z" fill="var(--color-red-500)" />
+        </svg>
+      </div>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
           <div className="lg:pr-8">

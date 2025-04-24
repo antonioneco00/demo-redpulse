@@ -35,41 +35,32 @@ export default function MobileMenu({ isOpen, setIsOpen }: MobileMenuProps) {
           <div className="-my-6 divide-y divide-gray-500/10">
             <div className="space-y-2 py-6">
               <Link
-                href="/"
+                href="#"
                 className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold hover:bg-gray-50"
                 onClick={() => setIsOpen(false)}
               >
-                Home
+                Inicio
               </Link>
               <Link
-                href="/about"
+                href="#about"
                 className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold hover:bg-gray-50"
                 onClick={() => setIsOpen(false)}
               >
-                About
+                Sobre Nosotros
               </Link>
-              {/* Cambiar por enlace a si no se necesita otra página */}
               <Link
-                href="/contact"
+                href="#pricing"
                 className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold hover:bg-gray-50"
                 onClick={() => setIsOpen(false)}
               >
-                Contact
+                Precios
               </Link>
-              {/* <a
-                href="#contact"
-                className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold hover:bg-gray-50"
-                onClick={() => setIsOpen(false)}
-
-              >
-                Contact
-              </a> */}
               <Link
-                href="/products"
+                href="#footer"
                 className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold hover:bg-gray-50"
                 onClick={() => setIsOpen(false)}
               >
-                Products
+                Información
               </Link>
             </div>
           </div>

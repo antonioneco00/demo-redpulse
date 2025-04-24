@@ -2,7 +2,30 @@ import { tiers } from "@/lib/products";
 
 export default function PricingSection() {
   return (
-    <div className="relative isolate px-6 py-24 sm:py-32 lg:px-8" id="pricing">
+    <div
+      className="relative overflow-hidden isolate px-6 py-24 sm:py-32 lg:px-8"
+      id="pricing"
+    >
+      <div className="absolute top-0 left-0">
+        <svg
+          viewBox="0 0 924 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-screen -scale-100"
+        >
+          <path d="M924 0L7.52602e-06 20H924V0Z" fill="var(--color-red-500)" />
+        </svg>
+      </div>
+      <div className="absolute -bottom-[1px]">
+        <svg
+          viewBox="0 0 924 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-screen"
+        >
+          <path d="M924 0L7.52602e-06 20H924V0Z" fill="var(--color-neutral-600)" />
+        </svg>
+      </div>
       <div className="mx-auto max-w-4xl text-center">
         <h2 className="text-base/7 font-semibold text-red-500">Precios</h2>
         <p className="mt-2 text-5xl font-semibold tracking-tight text-balance sm:text-6xl">
@@ -18,23 +41,10 @@ export default function PricingSection() {
         {tiers.map((tier, key) => (
           <div
             key={key}
-            className={`relative bg-background flex h-full flex-col shadow-2xl p-8 ring-1 ${tier.free ? 'ring-red-500' : 'ring-gray-500/60'} sm:p-10`}
+            className={`relative bg-background flex h-full flex-col shadow-2xl dark:shadow-red-500 p-8 rounded-lg ring-1 ${
+              tier.free ? "ring-red-500" : "ring-gray-500/60"
+            } sm:p-10`}
           >
-            {/* <div className="absolute top-3 right-3">
-              <svg
-                width="28"
-                height="28"
-                viewBox="0 0 28 28"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle cx="14" cy="14" r="2" fill="var(--color-red-500)" />
-                <circle cx="14" cy="2" r="2" fill="var(--color-red-500)" />
-                <circle cx="26" cy="26" r="2" fill="var(--color-red-500)" />
-                <circle cx="2" cy="2" r="2" fill="var(--color-red-500)" />
-                <circle cx="26" cy="14" r="2" fill="var(--color-red-500)" />
-              </svg>
-            </div> */}
             <h3 className="text-red-500 text-base/7 font-semibold">
               {tier.name}
             </h3>
